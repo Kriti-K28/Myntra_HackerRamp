@@ -26,7 +26,7 @@
     <!-- ==============header menu section starts here============== -->
     <section class="header_menu" id="header_menu ">
        <div class="container-fluid px-0 shadow">
-          <nav class="navbar navbar-expand-lg fixed-top  navbar-light  py-3 " id="navbar" style="background-color: #5c969e;">
+          <nav class="navbar navbar-expand-lg fixed-top  navbar-light  py-3 " id="navbar" style="background-color: white; box-shadow: 0px 20px 20px -15px rgb(145, 142, 142);">
                 <a class="navbar-brand pl-5 pl-small-0" href="index.html">
                 <img src="assets/imag/logo.jpg" class="img img-fluid" width="50px" height="20px"
                  alt="logo" id="logo">
@@ -49,7 +49,7 @@
                           <a class="nav-link" href="category.html">Category</a>
                       </li>
                       <li class="nav-item">
-                           <a class="nav-link" href="about.html">About Us</a>
+                           <a class="nav-link" href="offers.html">Offers</a>
                       </li>           
                       <li class="nav-item">
                           <a class="nav-link" href="contact.html">Contact Us</a>
@@ -77,12 +77,18 @@
                         </a>
                         
                        -->
-                    <div class="cart " >
-                       <a href="cart.html">
-                       <i class="fas fa-shopping-cart fa-2x" ></i>
+                    <div class="login" >
+                       <a href="">
+                       <i class="fa fa-user fa-2x" aria-hidden="true"></i>
                        <!-- <span class="badge badge-pill badge-primary">24</span> -->
                        </a>
                     </div>
+                    <div class="cart" >
+                      <a href="cart.html">
+                      <i class="fas fa-shopping-cart fa-2x" ></i>
+                      <!-- <span class="badge badge-pill badge-primary">24</span> -->
+                      </a>
+                   </div>
                 </div>
              </nav>
            </div>
@@ -94,13 +100,13 @@
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner"  role="listbox" style=" width:100%; height: 500px !important;">
       <div class="carousel-item active">
-        <img src="assets/imag/laptop (1).jpg" class="d-block w-100 h-10" alt="..." >
+        <img src="assets/imag/Car1.png" class="d-block w-100 h-10" alt="..." >
       </div>
       <div class="carousel-item">
-        <img src="assets/imag/tablet.jpg" class="d-block w-100" alt="...">
+        <img src="assets/imag/Car2.png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="assets/imag/mobile.jpg" class="d-block w-100 h-50" alt="...">
+        <img src="assets/imag/CAr3.png" class="d-block w-100 " alt="...">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -121,39 +127,51 @@
      <div class="section_title text-center mb-5">
         <h1 class="text-capitalize">Shop By category</h1>
      </div>
-     <div class="row">
-       <div class="col-md-4 col-12">
-        <div class="card bg-dark text-white">
+     <div class="row" style="margin-left: 3%;">
+       
+       <div class="col-md-3 col-12">
+        <div class="card bg-dark text-dark">
            <a href="category.html">
-             <img class="card-img img img-fluid" src="assets/imag/Laptop_shop.jpg" alt="Card image">
+             <img class="card-img img img-fluid" src="assets/imag/shirts.jpg" alt="Card image">
              <div class="carousel-caption pb-0">
-              <h1>Laptops</h1>
+              <h1>Men</h1>
             </div>
            </a>
         </div>
         </div>
-        <div class="col-md-4 col-12 mt-small-5 mb-small-5">
+        <div class="col-md-3 col-12">
+          <div class="card bg-dark text-dark">
+             <a href="category.html">
+               <img class="card-img img img-fluid" src="assets/imag/shirts.jpg" alt="Card image">
+               <div class="carousel-caption pb-0">
+                <h1>Men</h1>
+              </div>
+             </a>
+          </div>
+          </div>
+        <div class="col-md-3 col-12 mt-small-5 mb-small-5">
            <div class="card bg-dark text-white">
              <a href="category.html">
-      <img class="card-img img img-fluid" src="assets/imag/tablet_s.jpg"
+      <img class="card-img img img-fluid" src="assets/imag/tops.jpg"
       alt="Card image">
       <div class="carousel-caption pb-0">
-        <h1>Tablets</h1>
+        <h1>Women</h1>
       </div>
       </a>
       </div>
       </div>
-      <div class="col-md-4 col-12">
-      <div class="card bg-dark text-white">
-      <a href="category.html">
-      <img class="card-img img img-fluid" src="assets/imag/mobile_shop.jpg"
-      alt="Card image">
-      <div class="carousel-caption pb-0">
-        <h1>Mobiles</h1>
+      <div class="col-md-3 col-12">
+        <div class="card bg-dark text-white">
+           <a href="category.html">
+             <img class="card-img img img-fluid" src="assets/imag/kids1.jpg"
+              alt="Card image">
+              <div class="carousel-caption pb-0">
+               <h1>Kids</h1>
+               </div>
+            </a>
+          </div>
       </div>
-      </a>
-      </div>
-      </div>
+      
       </div>
       </div>
       </section>
@@ -169,7 +187,7 @@
             <div class="col-md-4 col-12">
               <div class="single_product shadow text-center p-1">
                 <div class="product_img hover">
-                  <a href="product_detail.html"><img src="assets/imag/one_plus (1).jpg" class="img img-fluid" alt=""></a>
+                  <a href="product_detail.html"><img src="assets/imag/prod1.jpg" class="img img-fluid" alt=""></a>
                   <div class="new_product">
                     <span class="badge py-1 px-1 badge-pill badge-danger">New</span>
                   </div>
@@ -182,9 +200,9 @@
                   <i class="fas fa-star "></i>
                   <i class="far fa-star low-star"></i>
                 </div>
-                <h4> <a href="product_detail.html">One Plus 7 pro</a></h4>
+                <h4> <a href="product_detail.html">Magenta Solid Fit and ..</a></h4>
                  <div class="price">
-                    <b><span class="mr-1"> ₹</span><span>40,000</span></b>
+                    <b><span class="mr-1"> ₹</span><span>899</span></b>
                  </div>
                 </div>
               </div>
@@ -192,7 +210,7 @@
             <div class="col-md-4 col-12">
               <div class="single_product shadow text-center p-1">
                 <div class="product_img hover">
-                  <a href="product_detail.html"><img src="assets/imag/vivo.jpg" class="img img-fluid" alt=""></a>
+                  <a href="product_detail.html"><img src="assets/imag/prod2.png" class="img img-fluid" alt=""></a>
                   <div class="new_product">
                     <span class="badge py-1 px-1 badge-pill badge-danger">New</span>
                   </div>
@@ -205,9 +223,9 @@
                   <i class="far fa-star low-star"></i>
                   <i class="far fa-star low-star"></i>
                 </div>
-                <h4> <a href="product_detail.html">Vivo</a></h4>
+                <h4> <a href="product_detail.html">Classic Plaid Shirt</a></h4>
                  <div class="price">
-                    <b><span class="mr-1"> ₹</span><span>15,000</span></b>
+                    <b><span class="mr-1"> ₹</span><span>899</span></b>
                  </div>
                 </div>
               </div>
@@ -215,7 +233,7 @@
             <div class="col-md-4 col-12">
               <div class="single_product shadow text-center p-1">
                 <div class="product_img hover">
-                  <a href="product_detail.html"><img src="assets/imag/aces.jpg" class="img img-fluid" alt=""></a>
+                  <a href="product_detail.html"><img src="assets/imag/prod3.png" class="img img-fluid" alt=""></a>
                   <div class="new_product">
                     <span class="badge py-1 px-1 badge-pill badge-danger">New</span>
                   </div>
@@ -228,9 +246,9 @@
                   <i class="fas fa-star "></i>
                   <i class="far fa-star low-star"></i>
                 </div>
-                <h4> <a href="product_detail.html">Acer Aspire 5 laptop</a></h4>
+                <h4> <a href="product_detail.html">Full Sleeves Winter Wear</a></h4>
                  <div class="price">
-                    <b><span class="mr-1"> ₹</span><span>59,999</span></b>
+                    <b><span class="mr-1"> ₹</span><span>999</span></b>
                  </div>
                 </div>
               </div>
