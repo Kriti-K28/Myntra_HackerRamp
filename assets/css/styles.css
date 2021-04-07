@@ -256,7 +256,10 @@ div:hover > .hover
 {
   color: #9ad3bc;
 }
-
+.footer-text
+{
+  color: white;
+}
 .circle {
   position: relative;
   display: block;
