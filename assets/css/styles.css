@@ -248,9 +248,15 @@ div:hover > .hover
   box-shadow: 0 2px 0 #ccb800;
   transform: translateY(3px);
 }
+
 .contact_t
 {
   color: #f4f4f2;
+}
+.login_sec
+{
+  height: 100vh;
+  background-image: linear-gradient(#FFE3E0,#F7A399);
 }
 .form_t
 {
