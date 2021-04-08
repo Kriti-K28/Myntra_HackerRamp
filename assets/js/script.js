@@ -13,15 +13,15 @@
         //Validation Conditions here
         if (name.length < 1) {
             alert("Name is Required!");
-            var isValidForm = false;
+            isValidForm = false;
         }       
         else if (email.length < 1) {
             alert("Email is Required!");
-            var isValidForm = false;
+            isValidForm = false;
         } 
         else if (msg.length < 1) {
             alert("Message is Required!");
-            var isValidForm = false;
+            isValidForm = false;
         }
         else
         {
