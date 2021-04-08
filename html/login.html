@@ -88,12 +88,14 @@
         <div class="row pt-5 no-gutter d-flex justify-content-center">
             <div class="col-md-5 col-2 px-5  my-5 border for" style="background-color: white;">
                 <h4 class="py-5">Login<span style="font-size: 20px;"> or </span>Signup</h4> 
-                        <form action="contact.html" method="POST" id="form" onsubmit="return formValidation();">
+                        <form action="contact.html" method="POST" id="form" onsubmit="formValidation();" onclick="signinwithgoogle()">
                             <div class="form-group"> 
-                                <input name="contact_no." id="number" type="text" placeholder="+91 | Mobile Number* " class="form-control "> 
+                                <input name="email" id="email" type="text" placeholder="email address " class="form-control ">
+                                <input name="password" id="password" type="password" placeholder="password " class="form-control mt-1 "> 
                             </div> 
                             <p>By continuing, I agree to the Terms of use & Privacy policy</p>
-                            <button type="submit" class="btn btn-block btn-danger mt-3 mb-5">Submit</button> 
+                            <button type="submit" class="btn btn-block btn-danger mt-3">Submit</button> 
+                            <button type="click" class="btn btn-block btn-light  mb-5">Continue with Google</button> 
                         </form> 
             
             
@@ -112,7 +114,8 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
-
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+<script src="js/fconfig.js"></script>
 
       <!-- Optional JavaScript; choose one of the two! -->
        <script src="assets/js/script.js"></script> 
