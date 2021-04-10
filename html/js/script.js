@@ -1,9 +1,10 @@
 
-// import firebase from "firebase/app";
-// import "firebase/auth";
+//const firebase =require("firebase/app");
+//const fauth=require( "firebase/auth");
     //form validation with javascript
     function formValidation()
     {
+      
         //Get Value
         //if user doesnt exist transfer to another page and ask details
         var email = document.getElementById('email').value.trim();
@@ -18,12 +19,10 @@
            
         } 
         if(password.length < 1)
-        alert("Password is Required!");
-        // else
-        //     signUpWithEmailPassword(email, password);
-        else
-            isValidForm =true; 
-        return isValidForm; 
+          alert("Password is Required!");
+         else
+            signUpWithEmailPassword(email, password);
+        
             //if isValidForm is true then form submits else submission is stopped
         
     }
@@ -32,7 +31,7 @@
 
 
 function signInWithEmailPassword(email, password) {
- 
+
   // [START auth_signin_password]
   firebase.auth().signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
@@ -55,11 +54,13 @@ function signUpWithEmailPassword(email, password) {
     .then((userCredential) => {
       // Signed up 
       var user = userCredential.user;
+      alert(user);
       //redirect to ask dets
       // ...
     })
     .catch((FirebaseAuthUserCollisionException) => {
       //signin
+      alert('err');
       signInWithEmailPassword(email, password);
       //redirect to home
     });
