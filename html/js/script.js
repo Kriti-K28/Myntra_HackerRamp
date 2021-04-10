@@ -1,6 +1,6 @@
 
-import firebase from "firebase/app";
-import "firebase/auth";
+// import firebase from "firebase/app";
+// import "firebase/auth";
     //form validation with javascript
     function formValidation()
     {
@@ -8,24 +8,23 @@ import "firebase/auth";
         //if user doesnt exist transfer to another page and ask details
         var email = document.getElementById('email').value.trim();
         var password = document.getElementById('password').value.trim();
-
-              alert(email);
+        var isValidForm = true;    
+              // alert(email);
 
         //Validation Conditions here
-        if (name.length < 1) {
-            alert("Name is Required!");
-            
-        }       
-        else if (email.length < 1) {
+          
+         if (email.length < 1) {
             alert("Email is Required!");
            
         } 
-        else if (msg.length < 1) {
-            alert("Message is Required!");
-           
-        }
+        if(password.length < 1)
+        alert("Password is Required!");
+        // else
+        //     signUpWithEmailPassword(email, password);
         else
-            signUpWithEmailPassword(email, password); //if isValidForm is true then form submits else submission is stopped
+            isValidForm =true; 
+        return isValidForm; 
+            //if isValidForm is true then form submits else submission is stopped
         
     }
 
@@ -131,4 +130,4 @@ function sendPasswordReset(email) {
         });
 
     });*/
-
+    console.log("Print");

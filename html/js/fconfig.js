@@ -15,3 +15,15 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
   const db=firebase.database();
+  // const auth= firebase.auth();
+  // console.log("Sign in");
+
+  // function signUp()
+  // {
+  //   var email = document.getElementById('email');
+  //   var password = document.getElementById('password');
+  //   const promise = auth.createUserwithEmailAndPassword(email.value,password.value);
+  //   promise.catch(e=>alert(e.message));
+  //   alert("Sign in");
+
+  // }

@@ -97,9 +97,9 @@
             
         </div>
         <div class="row  no-gutter">
-            <div class="col-md-6 col-2 ml-auto mb-1 my-5 pl-5 py-5 border shadow form_t" style="background-color: #fcfcfc;">
+            <div class="col-md-6 col-2 ml-auto  px-5 py-3  border shadow form_t" style="background-color: #fcfcfc;">
                         <h3 class="text-center mb-3">Send Us A Message</h3> 
-                        <form action="contact.html" method="POST" id="form" onsubmit="">
+                        <form action="contact.html" method="POST" id="form" onsubmit="return formValidation()">
                             <div class="form-group"> 
                                 <label>Name</label>
                                 <input name="name" id="name" type="text" placeholder="Name" class="form-control"> 
@@ -116,7 +116,7 @@
                         </form> 
               
             </div>
-            <div class="col-md-4 col-10  mb-3 my-5 ml-10 py-5 border shadow contact_t" style="background-color: #f1a9a0;">
+            <div class="col-md-4 col-10 py-3 border shadow contact_t" style="background-color: #f1a9a0;">
                         <h3 class="text-center mb-3">Info</h3>  
                             <div class=" text-center p-3"> 
                                 <div class="mb-3"> 
@@ -141,7 +141,8 @@
 <!-- ==============contact ends here============== -->
 
       <!-- Optional JavaScript; choose one of the two! -->
-       <script src="assets/js/script.js"></script> 
+       <script src="js/script.js"></script>
+       <!-- <script src="js/test.js"></script> -->
       <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

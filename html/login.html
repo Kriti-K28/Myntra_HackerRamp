@@ -21,7 +21,7 @@
          <!-- Font Awesome icons (free version)-->
          <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
   </head>
-  <body style="overflow-y: hidden">
+  <body >
     <!-- ==============header menu section starts here============== -->
     <section class="header_menu" id="header_menu">
        <div class="container-fluid px-0 shadow">
@@ -85,40 +85,50 @@
         <div class="section_title text-center mb-5" > 
             
         </div>
-        <div class="row pt-5 no-gutter d-flex justify-content-center">
+        <div class="row pt-5 no-gutter d-flex justify-content-center login_div">
             <div class="col-md-5 col-2 px-5  my-5 border for" style="background-color: white;">
                 <h4 class="py-5">Login<span style="font-size: 20px;"> or </span>Signup</h4> 
-                        <form action="contact.html" method="POST" id="form" onSubmit="formValidation()" onclick="signinwithgoogle()">
-                            <div class="form-group"> 
-                                <input name="email" id="email" type="text" placeholder="email address " class="form-control ">
-                                <input name="password" id="password" type="password" placeholder="password " class="form-control mt-1 "> 
-                            </div> 
-                            <p>By continuing, I agree to the Terms of use & Privacy policy</p>
-                            <button type="submit" class="btn btn-block btn-danger mt-3">Submit</button> 
-                            <button type="click" class="btn btn-block btn-light  mb-5">Continue with Google</button> 
-                        </form> 
-            
-            
+                <!-- <form action="login.html" method="POST" id="form"  onclick="signinwithgoogle();"> -->
+                  <form action="" method="" id="form" onsubmit="return formValidation();">
+                    <div class="form-group"> 
+                        <input name="email" id="email" type="text" placeholder="email address " class="form-control ">
+                        <input name="password" id="password" type="password" placeholder="password " class="form-control mt-1 "> 
+                    </div> 
+                    <p>By continuing, I agree to the Terms of use & Privacy policy</p>
+                    <button type="submit" class="btn btn-block btn-danger mt-3" >Login</button> 
+                    <button type="submit" class="btn btn-block btn-danger mt-3" onclick="signUp();" >Signup</button>
+                    <button type="click" class="btn btn-block btn-light  mb-5">Continue with Google</button> 
+                </form> 
             </div>
-       
         </div> 
+        <div class="row pt-5 no-gutter d-flex justify-content-center user_div">
+          <div class="col-md-5 col-2 px-5  my-3 border for" style="background-color: white;">
+              <h4 class="py-3">Welcome User</h4> 
+              <!-- <form action="login.html" method="POST" id="form"  onclick="signinwithgoogle();"> -->
+                <!-- <form action="" method="POST" id="form" >
+                  <div class="form-group"> 
+                     Login successfully
+                  </div> 
+                  <button type="submit" class="btn btn-block btn-danger mb-3" onclick="login();" >Logout</button> 
+              
+              </form>  -->
+          </div>
+      </div> 
     </div> 
 </section> 
 <!-- ==============contact ends here============== -->
 
 
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script> -->
 <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
 <script src="js/fconfig.js"></script>
-
-      <!-- Optional JavaScript; choose one of the two! -->
-       <script src="js/script.js"></script> 
+<script src="js/script.js"></script> 
+<!-- <script src="js/test.js"></script> -->
+     
       <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
